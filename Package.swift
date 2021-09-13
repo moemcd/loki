@@ -63,7 +63,7 @@ let package = Package(
     .binaryTarget(
       name: "GoogleAppMeasurement",
       url: "https://moemcd.github.io/GoogleAppMeasurement.xcframework.zip",
-      checksum: "xxx"
+      checksum: "9d457ea4747e730bab6f87b6cb4bd0cb976779db132522469f3f3067ef9c0732"
     ),
 
     .target(
@@ -87,7 +87,7 @@ let package = Package(
     .binaryTarget(
       name: "AppMeasurementIdentitySupport",
       url: "https://moemcd.github.io/GoogleAppMeasurementIdentitySupport.xcframework.zip",
-      checksum: "xxx"
+      checksum: "a25276982390080e6da5a900bf17c8731cf87575e7e6cb50613494057230c7d2"
     ),
   ],
   cLanguageStandard: .c99,
