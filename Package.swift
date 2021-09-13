@@ -62,7 +62,7 @@ let package = Package(
     ),
     .binaryTarget(
       name: "GoogleAppMeasurement",
-      url: "https://moemcd.github.io/GoogleAppMeasurement.zip",
+      url: "https://moemcd.github.io/GoogleAppMeasurement.xcframework.zip",
       checksum: "xxx"
     ),
 
@@ -86,7 +86,7 @@ let package = Package(
     ),
     .binaryTarget(
       name: "AppMeasurementIdentitySupport",
-      url: "https://moemcd.github.io/GoogleAppMeasurementIdentitySupport.zip",
+      url: "https://moemcd.github.io/GoogleAppMeasurementIdentitySupport.xcframework.zip",
       checksum: "xxx"
     ),
   ],
