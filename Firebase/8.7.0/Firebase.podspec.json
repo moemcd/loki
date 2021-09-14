@@ -10,7 +10,7 @@
   },
   "authors": "Google, Inc.",
   "source": {
-    "git": "https://github.com/moemcd/firebase-ios-sdk.git",
+    "git": "https://github.com/moemcd/firebase-ios-sdk.git"
   },
   "preserve_paths": [
     "CoreOnly/CHANGELOG.md",
