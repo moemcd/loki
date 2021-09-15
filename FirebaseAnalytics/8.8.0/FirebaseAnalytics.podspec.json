@@ -31,7 +31,7 @@
         "ios": "9.0"
     },
     "source": {
-        "http": "https://moemcd.github.io/FirebaseAnalytics.xcframework.zip"
+        "http": "https://moemcd.github.io/FirebaseAnalytics-8.8.0.tar.gz"
     },
     "subspecs": [
         {
