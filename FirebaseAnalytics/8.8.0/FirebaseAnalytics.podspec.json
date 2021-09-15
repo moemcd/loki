@@ -1,19 +1,22 @@
+
 {
     "authors": "Google, Inc.",
-    "cocoapods_version": ">= 1.10.2",
+    "cocoapods_version": ">= 1.10.0",
     "default_subspecs": "AdIdSupport",
     "dependencies": {
+        "FirebaseCore": "~> 8.0",
+        "FirebaseInstallations": "~> 8.0",
         "GoogleUtilities/AppDelegateSwizzler": "~> 7.4",
         "GoogleUtilities/MethodSwizzler": "~> 7.4",
         "GoogleUtilities/NSData+zlib": "~> 7.4",
         "GoogleUtilities/Network": "~> 7.4",
         "nanopb": "~> 2.30908.0"
     },
-    "description": "Measurement methods that are shared between Google libraries. This pod does not expose any headers and isn't intended for direct use, but rather as a dependency of some Google libraries.",
+    "description": "Firebase Analytics is a free, out-of-the-box analytics solution that inspires actionable insights based on app usage and user engagement.",
     "frameworks": [
         "StoreKit"
     ],
-    "homepage": "https://developers.google.com/ios",
+    "homepage": "https://firebase.google.com/features/analytics/",
     "libraries": [
         "c++",
         "sqlite3",
@@ -23,30 +26,33 @@
         "text": "Copyright 2021 Google",
         "type": "Copyright"
     },
-    "name": "GoogleAppMeasurement",
+    "name": "FirebaseAnalytics",
     "platforms": {
         "ios": "9.0"
     },
     "source": {
-        "http": "https://github.com/moemcd/moemcd.github.io/GoogleAppMeasurement-8.8.0.tar.gz"
+        "http": "https://github.com/moemcd/moemcd.github.io/FirebaseAnalytics-8.8.0.tar.gz"
     },
     "subspecs": [
         {
             "name": "AdIdSupport",
             "dependencies": {
-                "GoogleAppMeasurement/WithoutAdIdSupport": "8.7.0"
+                "GoogleAppMeasurement": "8.8.0"
             },
             "vendored_frameworks": [
-                "Frameworks/GoogleAppMeasurementIdentitySupport.xcframework"
+                "Frameworks/FirebaseAnalytics.xcframework"
             ]
         },
         {
             "name": "WithoutAdIdSupport",
+            "dependencies": {
+                "GoogleAppMeasurement/WithoutAdIdSupport": "8.8.0"
+            },
             "vendored_frameworks": [
-                "Frameworks/GoogleAppMeasurement.xcframework"
+                "Frameworks/FirebaseAnalytics.xcframework"
             ]
         }
     ],
-    "summary": "Shared measurement methods for Google libraries. Not intended for direct use.",
-    "version": "8.7.0"
+    "summary": "Firebase Analytics for iOS",
+    "version": "8.8.0"
 }
